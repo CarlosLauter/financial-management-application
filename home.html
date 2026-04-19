@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-background: #0b0f1a;
+      }
+    </style>
+  </head>
+  <body class="text-white bg-background">
+    <main class="space-y-4 max-w-md mx-auto py-12">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-slate-400">Bom dia,</p>
+          <p class="text-2xl">Carlos Douglas</p>
+        </div>
+        <img
+          src="./assets/user.jpg"
+          alt="user"
+          width="48"
+          class="rounded-full border-2 border-yellow-500"
+        />
+      </div>
+
+      <div class="space-y-4 rounded-lg bg-[#161f38] pt-8 px-4 pb-2">
+        <img src="./assets/chip.png" alt="chip" width="40" height="auto" />
+
+        <div class="relative">
+          <p class="text-slate-400">Saldo total</p>
+          <p class="text-4xl font-bold">R$ 2.056.059,08</p>
+
+          <span
+            class="p-1 absolute bottom-1 right-1 text-sm text-green-500 bg-green-900 rounded-full"
+            >+3,24%</span
+          >
+        </div>
+
+        <div class="flex items-end justify-between">
+          <p class="text-zinc-300">**** **** **** 7682</p>
+          <p class="font-bold italic text-xl">VISA</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h2>Ações rápidas</h2>
+
+        <nav class="flex items-center justify-center gap-2 w-full">
+          <button
+            class="flex flex-col items-center justify-center gap-2 bg-[#111927] rounded-lg h-22 w-28 cursor-pointer"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] text-green-700 h-8 w-8 rounded-full"
+            >
+              <i class="bx bx-up-arrow-alt"></i>
+            </div>
+            <p class="text-sm text-slate-400">Transferir</p>
+          </button>
+
+          <button
+            class="flex flex-col items-center justify-center gap-2 bg-[#111927] rounded-lg h-22 w-28 cursor-pointer"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] text-green-700 h-8 w-8 rounded-full"
+            >
+              <i class="bx bx-down-arrow-alt"></i>
+            </div>
+            <p class="text-sm text-slate-400">Receber</p>
+          </button>
+
+          <button
+            class="flex flex-col items-center justify-center gap-2 bg-[#111927] rounded-lg h-22 w-28 cursor-pointer"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] text-green-700 h-8 w-8 rounded-full"
+            >
+              <i class="bx bx-dollar"></i>
+            </div>
+            <p class="text-sm text-slate-400">Pagar</p>
+          </button>
+
+          <button
+            class="flex flex-col items-center justify-center gap-2 bg-[#111927] rounded-lg h-22 w-28 cursor-pointer"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] text-green-700 h-8 w-8 rounded-full"
+            >
+              <i class="bx bx-dots-horizontal-rounded"></i>
+            </div>
+            <p class="text-sm text-slate-400">Mais</p>
+          </button>
+        </nav>
+      </div>
+
+      <div class="space-y-2">
+        <div class="flex w-full items-end justify-between">
+          <h2>Últimas transações</h2>
+
+          <a href="#" class="text-yellow-500 underline text-sm">Ver todas</a>
+        </div>
+
+        <div class="space-y-2">
+          <div
+            class="flex items-center justify-between gap-2 bg-[#0d1628] rounded-lg p-4"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] h-8 w-8 rounded-lg"
+            >
+              <i class="bx bxs-hot"></i>
+            </div>
+            <div class="flex-1">
+              <p>Leão de chácara</p>
+              <p class="text-xs text-slate-600">Hoje às 03:42</p>
+            </div>
+            <div class="text-right">
+              <p class="text-sm text-red-500">-R$6.000,00</p>
+              <p class="text-xs text-slate-600">Prostituição</p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between gap-2 bg-[#0d1628] rounded-lg p-4"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] h-8 w-8 rounded-lg"
+            >
+              <i class="bx bx-money"></i>
+            </div>
+            <div class="flex-1">
+              <p>Salário</p>
+              <p class="text-xs text-slate-600">Ontem às 08:02</p>
+            </div>
+            <div class="text-right">
+              <p class="text-sm text-green-500">R$20.000,00</p>
+              <p class="text-xs text-slate-600">Renda</p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between gap-2 bg-[#0d1628] rounded-lg p-4"
+          >
+            <div
+              class="flex items-center justify-center bg-[#0f2a4a] h-8 w-8 rounded-lg"
+            >
+              <i class="bx bxs-cat"></i>
+            </div>
+            <div class="flex-1">
+              <p>Tigrinho</p>
+              <p class="text-xs text-slate-600">Anteontem às 16:12</p>
+            </div>
+            <div class="text-right">
+              <p class="text-sm text-red-500">-R$200.000,00</p>
+              <p class="text-xs text-slate-600">Apostas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
